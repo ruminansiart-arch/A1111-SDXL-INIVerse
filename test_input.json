@@ -1,0 +1,12 @@
+{
+  "input": {
+    "workflow": "low",
+    "prompt": "a photo of an astronaut riding a horse on mars",
+    "negative_prompt": "blurry, bad quality",
+    "width": 512,
+    "height": 768,
+    "cfg_scale": 7.5,
+    "steps": 30,
+    "seed": 42
+  }
+}
