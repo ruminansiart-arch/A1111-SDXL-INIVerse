@@ -45,8 +45,10 @@ Separately refine ANY image (from presets or external sources) with 2x upscale +
     "image": "base64_image_string_here"
   }
 }
+```
 
 📋 Example Request
+```json
 
 {
   "input": {
