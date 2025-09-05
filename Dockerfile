@@ -46,6 +46,9 @@ RUN --mount=type=cache,target=/root/.cache/pip \
     pip install -r requirements_versions.txt && \
     python -c "from launch import prepare_environment; prepare_environment()" --skip-torch-cuda-test
 
+# Install ADetailer extension
+RUN git clone https://github.com/Bing-su/adetailer.git /stable-diffusion-webui/extensions/adetailer
+
 # Create folders and copy models
 RUN mkdir -p ${ROOT}/models/Stable-diffusion
 RUN mkdir -p ${ROOT}/models/ESRGAN
