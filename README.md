@@ -46,7 +46,15 @@ Separately refine ANY image (from presets or external sources) with 2x upscale +
   }
 }
 
+---
+
+## 🛠️ Refine Any Image Tool
+
+Separately refine ANY image (from presets or external sources) with 2x upscale + enhanced details:
+
 📋 Example Request
+
+```json
 
 {
   "input": {
