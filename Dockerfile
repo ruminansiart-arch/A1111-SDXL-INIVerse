@@ -7,10 +7,10 @@ RUN apk add --no-cache wget curl
 RUN \
     echo "API key starts with: 92bcbcdf1f..." && \
     echo "Testing API key..." && \
-    curl -s -H "Authorization: Bearer 65b2281089fad990e69764b97d4ee344" "https://civitai.com/api/v1/models" > /tmp/test_response && \
+    curl -s -H "Authorization: Bearer YOUR-CIVITAIAPIKEY-HERE" "https://civitai.com/api/v1/models" > /tmp/test_response && \
     echo "API test response: $(head -c 200 /tmp/test_response)" && \
     echo "Downloading model with curl (handles redirects better)..." && \
-    curl -L -H "Authorization: Bearer 65b2281089fad990e69764b97d4ee344" -o /INIVerse_Max.safetensors "https://civitai.com/api/download/models/1150354?type=Model&format=SafeTensor&size=full&fp=fp16" && \
+    curl -L -H "Authorization: Bearer YOUR-CIVITAIAPIKEY-HERE" -o /INIVerse_Max.safetensors "https://civitai.com/api/download/models/1150354?type=Model&format=SafeTensor&size=full&fp=fp16" && \
     echo "Download completed. File size: $(wc -c < /INIVerse_Max.safetensors) bytes" && \
     if [ $(wc -c < /INIVerse_Max.safetensors) -lt 1000000 ]; then \
         echo "ERROR: File too small - likely download failed!"; \
