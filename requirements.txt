@@ -1,4 +1,4 @@
-runpod==1.6.3
+runpod
 requests
 Pillow
 rich
