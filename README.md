@@ -47,7 +47,24 @@ Separately refine ANY image (from presets or external sources) with 2x upscale +
 }
 ```
 
-📋 Example Request
+##📋 Example Request 
+
+#Low Quality
+```json
+
+{
+  "input": {
+    "workflow": "low",
+    "prompt": "a photograph of an astronaut riding a horse",
+    "negative_prompt": "text, watermark, blurry, low quality",
+    "steps": 30,
+    "cfg_scale": 7.5,
+    "seed": -1
+  }
+}
+```
+
+#Medium Quality
 ```json
 
 {
@@ -57,8 +74,23 @@ Separately refine ANY image (from presets or external sources) with 2x upscale +
     "negative_prompt": "text, watermark, blurry, low quality",
     "steps": 30,
     "cfg_scale": 7.5,
-    "width": 512,
-    "height": 768,
     "seed": -1
   }
 }
+```
+
+#Max Quality
+```json
+
+{
+  "input": {
+    "workflow": "max",
+    "prompt": "a photograph of an astronaut riding a horse",
+    "negative_prompt": "text, watermark, blurry, low quality",
+    "steps": 30,
+    "cfg_scale": 7.5,
+    "seed": -1
+  }
+}
+```
+
