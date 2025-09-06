@@ -34,7 +34,7 @@ The `input` object accepts a `workflow` parameter with three preset options:
 
 ---
 
-## 🛠️ Refine Any Image Tool
+## 🛠️ Refine Any Image Tool (I2I)
 
 Separately refine ANY image (from presets or external sources) with 2x upscale + enhanced details:
 
@@ -47,9 +47,9 @@ Separately refine ANY image (from presets or external sources) with 2x upscale +
 }
 ```
 
-##📋 Example Request 
+## 📋 Example Request (T2I)
 
-#Low Quality
+Low Quality
 ```json
 
 {
@@ -64,7 +64,7 @@ Separately refine ANY image (from presets or external sources) with 2x upscale +
 }
 ```
 
-#Medium Quality
+Medium Quality
 ```json
 
 {
@@ -79,7 +79,7 @@ Separately refine ANY image (from presets or external sources) with 2x upscale +
 }
 ```
 
-#Max Quality
+Max Quality
 ```json
 
 {
