@@ -60,7 +60,7 @@ def handler(event):
             "steps": job_input.get("steps", 40),
             "denoising_strength": 0.3,
             "alwayson_scripts": {
-                "ADetailer": {
+                "adetailer": {
                     "args": [{"ad_model": "face_yolov8n.pt", "ad_confidence": 0.3}]
                 }
             }
@@ -98,7 +98,7 @@ def handler(event):
             "steps": t2i_payload["steps"],
             "denoising_strength": 0.3,
             "alwayson_scripts": {
-                "ADetailer": {
+                "adetailer": {
                     "args": [{"ad_model": "face_yolov8n.pt", "ad_confidence": 0.3}]
                 }
             }
@@ -127,7 +127,7 @@ def handler(event):
             "steps": 20,
             "denoising_strength": 0.2,
             "alwayson_scripts": {
-                "ADetailer": {
+                "adetailer": {
                     "args": [{"ad_model": "face_yolov8n.pt", "ad_confidence": 0.3}]
                 }
             }
